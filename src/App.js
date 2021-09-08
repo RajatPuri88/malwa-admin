@@ -1,15 +1,11 @@
 import './App.css';
+import Login from './pages/Login';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <div className="container justify-center">
-      This is working.
-      <div class="flex flex-col">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
-    </div>
+   <Login />
+  //  <PageNotFound />
   );
 }
 

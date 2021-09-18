@@ -1,0 +1,15 @@
+# to auto deploy stuff on dev push event
+dev_deploy:
+  stage: deploy
+  only:
+    - dev # runs only for dev branch
+
+  before_script:
+    # Generate ssh key
+    - mkdir -p ~/.ssh
+    - echo -e "$STAGING_SSH_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+  script:
+    - bash .gitlab-deploy-dev.sh

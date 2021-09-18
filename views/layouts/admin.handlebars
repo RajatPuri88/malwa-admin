@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Amrit Malwa Capital</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/styles/style.min.css">
+
+    <!-- Material Design Icon -->
+    <link rel="stylesheet" href="assets/fonts/material-design/css/materialdesignicons.css">
+
+    <!-- mCustomScrollbar -->
+    <link rel="stylesheet" href="assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+
+    <!-- Waves Effect -->
+    <link rel="stylesheet" href="assets/plugin/waves/waves.min.css">
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="assets/plugin/sweet-alert/sweetalert.css">
+
+    <!-- Percent Circle -->
+    <link rel="stylesheet" href="assets/plugin/percircle/css/percircle.css">
+
+    <!-- Chartist Chart -->
+    <link rel="stylesheet" href="assets/plugin/chart/chartist/chartist.min.css">
+
+    <!-- FullCalendar -->
+    <link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/plugin/fullcalendar/fullcalendar.print.css" media='print'>
+
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="assets/plugin/datepicker/css/bootstrap-datepicker.min.css">
+
+    <!-- DateRangepicker -->
+    <link rel="stylesheet" href="assets/plugin/daterangepicker/daterangepicker.css">
+
+    <!-- Color Picker -->
+    <link rel="stylesheet" href="assets/color-switcher/color-switcher.min.css">
+
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="assets/plugin/datatables/media/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugin/datatables/extensions/Responsive/css/responsive.bootstrap.min.css">
+
+     <script src="../../assets/scripts/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main-menu">
+        <header class="header">
+            <a href="index.html" class="logo">Amrit Malwa Capital</a>
+            <button type="button" class="button-close fa fa-times js__menu_close"></button>
+        </header>
+        <!-- /.header -->
+        <div class="content">
+
+
+            <div class="navigation">
+                <ul class="menu js__accordion">
+                    <li id="dashMenu">
+                        <a class="waves-effect" href="/"><i
+                                class="menu-icon mdi mdi-view-dashboard"></i><span>Dashboard</span></a>
+                    </li>
+                    <li id="branchMenu">
+                        <a class="waves-effect" href="/add-del-branch"><i
+                                class="menu-icon mdi mdi-buffer"></i><span>Add/ Delete Branch</span></a>
+                    </li>
+                    <li id="staffMenu">
+                        <a class="waves-effect" href="/add-del-staff"> <i
+                                class="menu-icon mdi mdi-table"></i><span>Add/ Delete Staff</span></a>
+                    </li>
+
+
+                    <li id="leaveMenu">
+                        <a class="waves-effect" href="/staff-on-leave"><i
+                                class="menu-icon mdi mdi-book-multiple-variant"></i><span>Staff on Leave</span></a>
+                    </li>
+
+                    <li id="kmMenu">
+                        <a class="waves-effect" href="/view-km-location"><i
+                                class="menu-icon mdi mdi-map"></i><span>View KM/ Location</span></a>
+                    </li>
+
+                    <li id="attMenu">
+                        <a class="waves-effect" href="/view-attendance"><i
+                                class="menu-icon mdi mdi-map"></i><span>View Attendance </span></a>
+                    </li>
+
+                    <li>
+                        <a class="waves-effect" href="/users/logout"><i
+                                class="menu-icon mdi mdi-logout"></i><span>logout</span></a>
+                    </li>
+
+
+                    <!-- /.menu js__accordion -->
+            </div>
+            <!-- /.navigation -->
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.main-menu -->
+
+    <div class="fixed-navbar">
+        <div class="pull-left">
+            <button type="button"
+                class="menu-mobile-button glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
+            <h1 class="page-title"> </h1>
+            <!-- /.page-title -->
+        </div>
+        <!-- /.pull-left -->
+
+        <!-- /.pull-right -->
+    </div>
+    <!-- /.fixed-navbar -->
+
+
+    <div id="wrapper">
+
+
+        {{{body}}}
+
+
+
+
+        <!-- /.main-content -->
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="time-line" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"> Date: 24/8/2021</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                    <div class="review-list">
+                        <div class="review-item">
+                            <div class="top">
+                                <h5 class="box-title text-info">location 1 to Location 2</h5>
+                                <!-- /.name -->
+                                <div class="date">10.8 K.M</div>
+                                <!-- /.date -->
+
+                                <!-- /.star-rating -->
+                            </div>
+                            <!-- /.top -->
+                            <div class="desc">If any remarks (Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.)</div>
+                            <!-- /.desc -->
+                        </div>
+
+                        <div class="review-item">
+                            <div class="top">
+                                <h5 class="box-title text-info">location 2 to Location 3</h5>
+                                <!-- /.name -->
+                                <div class="date">8 K.M</div>
+                                <!-- /.date -->
+
+                                <!-- /.star-rating -->
+                            </div>
+                            <!-- /.top -->
+                            <div class="desc">If any remarks (Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.)</div>
+                            <!-- /.desc -->
+                        </div>
+
+                        <div class="review-item">
+                            <div class="top">
+                                <h5 class="box-title text-info">location 3 to Location 4</h5>
+                                <!-- /.name -->
+                                <div class="date">15.5 K.M</div>
+                                <!-- /.date -->
+
+                                <!-- /.star-rating -->
+                            </div>
+                            <!-- /.top -->
+                            <div class="desc">If any remarks (Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.)</div>
+                            <!-- /.desc -->
+                        </div>
+
+                    </div>
+                    </p>
+                    <p><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.65142749248!2d75.58396671553628!3d31.313377964466085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a4d861e3b85%3A0x2d5d9bf070fef388!2sAmrit%20Malwa%20Capital%20Limited!5e0!3m2!1sen!2sin!4v1630210834133!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm waves-effect waves-light"
+                        data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+   
+    <script src="../../assets/scripts/modernizr.min.js"></script>
+    <script src="../../assets/plugin/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/plugin/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../assets/plugin/nprogress/nprogress.js"></script>
+    <script src="../../assets/plugin/sweet-alert/sweetalert.min.js"></script>
+    <script src="../../assets/plugin/waves/waves.min.js"></script>
+    <!-- Full Screen Plugin -->
+    <script src="../../assets/plugin/fullscreen/jquery.fullscreen-min.js"></script>
+
+    <!-- Google Chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- chart.js Chart -->
+    <script src="../../assets/plugin/chart/chartjs/Chart.bundle.min.js"></script>
+    <script src="../../assets/scripts/chart.chartjs.init.min.js"></script>
+
+    <!-- FullCalendar -->
+    <script src="../../assets/plugin/moment/moment.js"></script>
+    <script src="../../assets/plugin/fullcalendar/fullcalendar.min.js"></script>
+    <script src="../../assets/scripts/fullcalendar.init.js"></script>
+
+
+
+    <!-- Flex Datalist -->
+    <script src="../../assets/plugin/flexdatalist/jquery.flexdatalist.min.js"></script>
+
+    <!-- Popover -->
+    <script src="../../assets/plugin/popover/jquery.popSelect.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="../../assets/plugin/select2/js/select2.min.js"></script>
+
+    <!-- Multi Select -->
+    <script src="../../assets/plugin/multiselect/multiselect.min.js"></script>
+
+    <!-- Touch Spin -->
+    <script src="../../assets/plugin/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+    <!-- Timepicker -->
+    <script src="../../assets/plugin/timepicker/bootstrap-timepicker.min.js"></script>
+
+
+    <!-- Datepicker -->
+    <script src="../../assets/plugin/datepicker/js/bootstrap-datepicker.min.js"></script>
+
+    <!-- Moment -->
+    <script src="../../assets/plugin/moment/moment.js"></script>
+
+    <!-- DateRangepicker -->
+    <script src="../../assets/plugin/daterangepicker/daterangepicker.js"></script>
+
+    <!-- Maxlength -->
+    <script src="../../assets/plugin/maxlength/bootstrap-maxlength.min.js"></script>
+
+    <!-- Demo Scripts -->
+    <script src="../../assets/scripts/form.demo.min.js"></script>
+
+    <!--  table to excel -->
+    <script src="../../assets/plugin/tabletoexcel/jquery.table2excel.js"></script>
+
+    <!-- Data Tables -->
+    <script src="../../assets/plugin/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../assets/plugin/datatables/media/js/dataTables.bootstrap.min.js"></script>
+    <script src="../../assets/plugin/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../assets/plugin/datatables/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
+    <script src="../../assets/scripts/datatables.demo.min.js"></script>
+
+    <!-- Sparkline Chart -->
+    <script src="../../assets/plugin/chart/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../../assets/scripts/chart.sparkline.init.min.js"></script>
+
+    <script src="../../assets/scripts/main.min.js"></script>
+
+    <script>
+        $("#exporttoexcel").click(function () {
+            $("#example").table2excel({
+                // exclude CSS class
+                exclude: ".noExl",
+                name: "Worksheet Name",
+                filename: "SomeFile", //do not include extension
+                fileext: ".xls" // file extension
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#leaveMenu').addClass('current');
+
+    });
+</script>
+
+<div class="main-content">
+
+    <div class="row small-spacing">
+
+        <div class="box-content card white">
+            <h4 class="box-title">Staff on Leave</h4>
+            <!-- /.box-title -->
+            <div class="card-content">
+                <form>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+
+                        <div class="form-group">
+                            <label for="">State</label>
+                            <select class="form-control">
+                                <option value=""> Andhra Pradesh </option>
+                                <option value="1">Arunachal Pradesh </option>
+                                <option value="2">Assam </option>
+                                <option value="3">Bihar </option>
+                                <option value="4">Chhattisgarh </option>
+                                <option value="5">Goa </option>
+                                <option value="6">Gujarat </option>
+                                <option value="7">Haryana </option>
+                                <option value="8">Himachal Pradesh </option>
+                                <option value="9">Jharkhand </option>
+                                <option value="10">Karnataka </option>
+                                <option value="11">Kerala </option>
+                                <option value="12">Madhya Pradesh </option>
+                                <option value="13">Maharashtra </option>
+                                <option value="14">Manipur </option>
+                                <option value="15">Meghalaya </option>
+                                <option value="16">Mizoram </option>
+                                <option value="17">Nagaland </option>
+                                <option value="18">Odisha </option>
+                                <option value="19">Punjab </option>
+                                <option value="20">Rajasthan </option>
+                                <option value="21">Sikkim </option>
+                                <option value="22">Tamil Nadu </option>
+                                <option value="23">Telangana </option>
+                                <option value="24">Tripura </option>
+                                <option value="25">Uttar Pradesh </option>
+                                <option value="26">Uttarakhand </option>
+                                <option value="27">West Bengal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+
+                        <div class="form-group">
+                            <label for="">Branch</label>
+                            <select class="form-control">
+                                <option value=""> Branch 1</option>
+                                <option value="1">Branch 2 </option>
+                                <option value="2">Branch 3</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Date</label>
+
+                            <div id="reportrange" class="pull-right form-control">
+                                <i class="fa fa-calendar"></i>
+                                <span>August 30, 2016 - September 28, 2016</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-12 margin-top-30">
+                        <div class="form-group">
+                            <button type="submit"
+                                class="btn btn-primary btn-sm waves-effect waves-light margin-bottom-20 margin-right-20  ">View</button>
+                            <button type="submit" id="exporttoexcel"
+                                class="btn btn-primary btn-sm waves-effect waves-light margin-bottom-20  ">Export to
+                                Excel</button>
+
+                        </div>
+
+                    </div>
+
+
+
+                </form>
+            </div>
+            <!-- /.card-content -->
+        </div>
+
+
+        <div class="box-content card white">
+            <h4 class="box-title">Staff on Leave</h4>
+            <!-- /.box-title -->
+            <div class="card-content">
+
+
+                <!-- /.dropdown js__dropdown -->
+                <table id="example" class="table table-striped table-bordered display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mobile No.</th>
+                            <th>Brach Name</th>
+                            <th>Leave from</th>
+                            <th>Leave to</th>
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mobile No.</th>
+                            <th>Brach Name</th>
+                            <th>Leave from</th>
+                            <th>Leave to</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Gaurav Mehta </td>
+                            <td>9592840928</td>
+                            <td>Jalandhar Brach</td>
+                            <td>24-8-2021</td>
+                            <td>25-8-2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Manjit Mehta </td>
+                            <td>9592840928</td>
+                            <td>Jalandhar Brach</td>
+                            <td>24-8-2021</td>
+                            <td>25-8-2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Raj Kumar </td>
+                            <td>9592840928</td>
+                            <td>Jalandhar Brach</td>
+                            <td>24-8-2021</td>
+                            <td>25-8-2021</td>
+                        </tr>
+
+                        <tr>
+                            <td> Gulati </td>
+                            <td>9876543210</td>
+                            <td>Jalandhar Brach</td>
+                            <td>24-8-2021</td>
+                            <td>25-8-2021</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vinay </td>
+                            <td>9876543210</td>
+                            <td>Jalandhar Brach</td>
+                            <td>24-8-2021</td>
+                            <td>25-8-2021</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -5,7 +5,13 @@ var express = require("express");
 var router = express.Router();
 
 
+
+
 // models
+// models
+let Branch = require("../models/Branch");
+let Staff = require("../models/Staff");
+let Repo = require("../models/Repo");
 
 
 // controllers
@@ -79,6 +85,36 @@ router.get("/view-attendance", ensureAuthenticated, async function (req, res) {
 
 
     res.render("view-attendance");
+  } catch (ex) {
+    console.log("Error Occured " + ex);
+    res.render("dashboard");
+  }
+});
+
+// Telegrams related
+router.get("/view-telegram", ensureAuthenticated, async function (req, res) {
+
+  try {
+    let messagesData = []
+    messagesData = await Repo.find({
+      isDeleted: false,
+      isTelegramSent: false,
+    }).populate({
+      path: "employee_id",
+      model: "Staff",
+      select: "_id name mobile branch_id",
+      populate : {
+        path : 'branch_id'
+      }
+    }).populate({
+      path: "staff_id",
+      model: "Staff",
+      select: "_id name",
+    }).lean();
+    console.log(messagesData)
+    res.render("view-telegram", {
+      messagesData: messagesData
+    });
   } catch (ex) {
     console.log("Error Occured " + ex);
     res.render("dashboard");

@@ -4,6 +4,14 @@
 
     });
 </script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
+" rel="stylesheet">
+
 <style>
 #cover-spin {
     position:fixed;
@@ -52,12 +60,12 @@
 
       const onFileSelected = async (event) => {
         try {
+            $('#cover-spin').css('display','block')
           var id=(event.target.id)
           const { fileUrl } = await upload.uploadFile(
             event.target.files[0],
             { onProgress: ({ progress }) => console.log(`${progress}% complete`) }
           );
-          alert(`File uploaded!\n${fileUrl}`);
           let datatosend=JSON.stringify({'telegramLink':fileUrl})
           $.ajax({
                 url: `https://api-malwa.onrender.com/api/telegram/${id}`,
@@ -67,7 +75,13 @@
                 }).done(function (response) {
                     if(response.IsSuccess)
                     {
-                        alert("file uplaoded succesfully")
+                       Swal.fire(
+                        'File Uploaded Successfully!',
+                        'Thanks',
+                        'success'
+                        )
+                       $('#cover-spin').css('display','none')
+
                     }
             
             });
